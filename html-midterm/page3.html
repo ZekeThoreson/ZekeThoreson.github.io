@@ -1,6 +1,12 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <!-- This is missing a title, meta, and a link to a css stylesheet found in the css subfolder. Please add them.-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mid-term Page 3</title> 
+    <link rel="stylesheet" href="/html-midterm/css/cars.css">
 </head>
 <body>
     <div class="navbar">
@@ -27,7 +33,12 @@
         </nav>
     </header>
     
-    <section id="about">
+    <!-- im not entirely sure what the errors are, maybe
+    the strucural one is using section instead of div? -->
+    <!-- could also be something with how the footer isnt below the message box -->
+    <!-- "The section tag is used when requirements of two headers or footers or any other section of documents needed."-->
+    <!-- One of the coding errors could be the no !DOCTYPE at the top of the page -->
+    <div id="about">
         <h2>About Cars</h2>
         <p>
             Cars have revolutionized transportation, providing convenient and efficient means of travel.
@@ -37,9 +48,9 @@
             Whether you're a speed enthusiast, an adventurer, or a family person, there's a perfect car for you.
             Car technology continues to evolve, making vehicles safer, greener, and smarter.
         </p>
-    </section>
+    </div>
     
-    <section id="models">
+    <div id="models">
         <h2>Popular Car Models</h2>
         <ul>
             <li>Hatchback</li>
@@ -48,9 +59,9 @@
             <li>Convertible</li>
             <li>Pickup Truck</li>
         </ul>
-    </section>
+    </div>
     
-    <section id="brands">
+    <div id="brands">
         <h2>Famous Car Brands</h2>
         <ul>
             <li>Toyota</li>
@@ -59,9 +70,9 @@
             <li>Mercedes-Benz</li>
             <li>Honda</li>
         </ul>
-    </section>
+    </div>
     
-    <section id="contact">
+    <div id="contact">
         <h2>Contact Us</h2>
         <p>If you have any questions or inquiries about cars, feel free to reach out to us.</p>
         <form>
@@ -76,7 +87,7 @@
             
             <button type="submit">Submit</button>
         </form>
-    </section>
+    </div>
     
     <footer>
         <p>&copy; 2023 Generic Car Page. All rights reserved.</p>
