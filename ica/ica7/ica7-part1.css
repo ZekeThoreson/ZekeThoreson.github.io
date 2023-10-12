@@ -48,7 +48,7 @@ background-color: orangered;
 #text3 {
     /* sticks the text in a certain position on the screen */
     position: sticky;
-    /* changing top will change when text 3 sticks */
+    /* changing top will change when text 3 sticksw */
     top: 0%;
     font-size: 50px;
     border: 5px solid green;
