@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            box-shadow: 1px 1px 2px;
+            cursor: pointer;
+            width: auto;
+            padding: 10px;
+            margin: 10px;
+        }
+        div{
+            box-shadow: 1px 1px 2px;
+            cursor: pointer;
+            width: auto;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        font{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <button type="button">Press Me</button>
+    <div type="font">Want a new font?</div>
+    <!-- <button id="press">Press Me</button> -->
+    <!-- <div id="press">Press Me</div> -->
+
+
+    <script>
+        // variables can be defined by let or const
+        const button = document.querySelector("button");
+        const press = document.getElementById("press");
+        const font = document.querySelector("font");
+
+        // on button, look for something to happen
+        button.addEventListener('click', updateName);
+        font.addEventListener('click', changeFont); 
+        // press.addEventListener('click', updateName);
+
+        function updateName(){
+            let name = prompt("Enter a new name");
+            // console.log is very helpful for debugging
+            console.log(name);
+            // whatever the text within button is
+            // this.textContent = `Player 1: ${name}`; 
+            console.log("The function ran correctly");
+            this.innerHTML = `<h1>Hello ${name}, how are you today?</h1> 
+                              <button>Not your name? Enter a new one</button>`;
+        }
+
+        function changeFont(){
+            this.innerHTML = '<div id="font">Want a new font?</div>'
+        }
+
+    </script>
+</body>
+</html>
