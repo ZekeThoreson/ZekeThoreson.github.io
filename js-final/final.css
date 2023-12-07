@@ -1,0 +1,47 @@
+h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 10px;
+    margin-bottom: 0px;
+}
+
+.buttons{
+    margin-bottom: 20px;
+}
+
+/* Styling each button */
+.buttons button {
+    font-size: 20px; 
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+canvas{
+    border: 8px solid rgb(232, 66, 66);
+}
+
+/* Hover effect for buttons */
+.buttons button:hover {
+    background-color: #45a049; /* Slightly darker shade on hover */
+}
+
+/* Style for the disabled button */
+.buttons button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.buttons #clickedNumbers{
+    font-size: 30px; 
+    padding-left: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    /* margin-left: 10px; */
+    color: black;
+}
