@@ -25,6 +25,7 @@ let employeeList = {
         }
     ]
 }
+console.log("Problem 1")
 console.log(employeeList)
 
 //Q2
@@ -58,6 +59,7 @@ let company = {
             }
         ]
 }
+console.log("Problem 2")
 console.log(company)
 
 //Q3
@@ -73,6 +75,7 @@ function addEmployee(firstName,department,designation,salary,raiseEligible,wfh){
     company["employees"].push(employee)
 }
 addEmployee("Anna","Tech","Executive",25600,false,false)
+console.log("Problem 3")
 console.log(company)
 
 //Q4
@@ -80,6 +83,7 @@ let totalSalary = 0;
 for(let i = 0; i < company.employees.length; i++){
     totalSalary += company["employees"][i]['salary']
 }
+console.log("Problem 4")
 console.log(totalSalary)
 
 //Q5
@@ -92,6 +96,7 @@ function isRaiseEligible(company){
     }
 }
 isRaiseEligible(company)
+console.log("Problem 5")
 console.log(company)
 
 //Q6
@@ -107,4 +112,5 @@ function workingFromHome(wfh){
     }
 }
 workingFromHome(wfh)
+console.log("Problem 6")
 console.log(company)
