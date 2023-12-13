@@ -1,3 +1,8 @@
+html, body {
+    margin:10;
+    overflow: hidden; /* Hide scrollbars */
+}
+
 h1{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding-left: 10px;
@@ -21,9 +26,11 @@ h1{
     transition: background-color 0.3s;
 }
 
-canvas{
+canvas {
+    width: 95vw;  /* 100% of the viewport width */
+    height: 80vh;  /* 80% of the viewport height */
     border: 8px solid rgb(232, 66, 66);
-}
+  }
 
 /* Hover effect for buttons */
 .buttons button:hover {
